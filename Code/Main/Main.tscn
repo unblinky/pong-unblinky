@@ -1,27 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://d1pxg62d0843d"]
+[gd_scene load_steps=4 format=3 uid="uid://d1pxg62d0843d"]
 
 [ext_resource type="PackedScene" uid="uid://dafepsq1rx382" path="res://Paddle/Paddle.tscn" id="1_dlxub"]
 [ext_resource type="PackedScene" uid="uid://c77ecyc7kn43e" path="res://Ball/Ball.tscn" id="2_cf0tw"]
+[ext_resource type="PackedScene" uid="uid://4xrem1l80qgy" path="res://Goal/Goal.tscn" id="3_oa5af"]
 
 [node name="Main" type="Node"]
 
 [node name="Paddle" parent="." instance=ExtResource("1_dlxub")]
-position = Vector2(163, 293)
+position = Vector2(108, 321)
 
 [node name="Ball" parent="." instance=ExtResource("2_cf0tw")]
-position = Vector2(548, 217)
+position = Vector2(655, 282)
 
-[node name="UI" type="PanelContainer" parent="."]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -126.5
-offset_top = 8.0
-offset_right = 126.5
-offset_bottom = 100.0
-grow_horizontal = 2
-
-[node name="Label" type="Label" parent="UI"]
-layout_mode = 2
-text = "0123456789"
-horizontal_alignment = 1
+[node name="Goal" parent="." instance=ExtResource("3_oa5af")]
+position = Vector2(891, 59)

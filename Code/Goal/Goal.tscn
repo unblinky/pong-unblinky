@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://4xrem1l80qgy"]
+
+[ext_resource type="Script" path="res://Goal/goal.gd" id="1_t814k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dev12"]
+size = Vector2(114, 661)
+
+[node name="Goal" type="Area2D"]
+script = ExtResource("1_t814k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-38, 323)
+shape = SubResource("RectangleShape2D_dev12")
+
+[node name="ScoreUI" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "3094580"
